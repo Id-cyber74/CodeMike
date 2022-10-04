@@ -1,0 +1,135 @@
+
+      *{
+      	box-sizing: border-box;
+      	font-family: Serif;
+      	margin: 0;
+      }
+	body{
+display: flex;
+ background-color: #4B6F44;
+flex-direction: column;
+min-height: 100vh;
+color: #585858;
+	}
+#newtaskform{
+display: flex;  /*so that the form is adjustable*/
+
+}
+h1{
+margin-bottom: 50px;
+font-size:2rem;
+
+}
+header{
+padding: 2rem 1rem;
+max-width: 800px;
+
+}
+
+input, button{
+appearance :none;
+border: none;
+outline: none;
+background: none;
+
+}
+
+#newtaskinput{
+flex: 1 1 0%;
+color: snow;
+padding: 1rem;
+border-radius: 1rem;
+font-size :1.5rem;
+background-color:#A9A9A9 ;
+
+}
+h2{
+color:  #585858;
+font-size: 2rem;
+margin-bottom: 40px;
+
+}
+main{
+flex: 1 1 0%;
+padding: 2rem 1rem;
+margin: auto 0;
+width: 100%;
+
+}
+
+.task-list{
+	padding: 1rem;
+}
+
+.task{
+display: flex;
+justify-content: space-between;
+border-radius: 1.25rem;
+margin-bottom: 1rem;
+background-color:#A9A9A9 ;
+padding: 1rem;
+;
+
+}
+.actions{
+display: flex;
+}
+
+.edit{
+font-size: 1.25rem;
+font-family: monospace;
+color: #66FF00;
+cursor: pointer;	
+}
+
+.delete{
+font-size: 1.25rem;
+font-family: monospace;
+color: #66FF00;
+cursor: pointer;
+}
+
+.delete:hover{
+
+color: #585858;	
+}
+
+.edit:hover{
+color: #585858;
+
+}
+
+.text{
+
+color: ghostwhite;
+font-size: 1.25rem;
+display: block;
+}
+
+.text:not(:read-only){
+
+	color:#66FF00 ;
+}
+
+.addtask{
+font-size: 1.25rem;
+font-family: monospace;
+color: #66FF00;
+cursor: pointer;
+font-weight: 700;
+
+}
+
+.addtask:hover{
+	color:#585858 ;
+}
+
+#newtaskinput::placeholder{
+	color: whitesmoke;
+	font-size:1.1rem ;
+
+}
+
+.content{
+flex:  1 1 0%;
+}
